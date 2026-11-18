@@ -1,0 +1,217 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    background: #111;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: #1c1c1c;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #f5a623;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5a623;
+}
+
+/* HERO */
+.hero {
+    min-height: 85vh;
+
+    background:
+        linear-gradient(#0009, #000b),
+        url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1600');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #f5a623;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: #f5a623;
+    color: #111;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* SECTION */
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    color: #f5a623;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #bbb;
+    margin-bottom: 35px;
+}
+
+/* MENU */
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background: #222;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.menu-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    border-color: #f5a623;
+}
+
+.emoji {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.menu-card h3 {
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #bbb;
+}
+
+.menu-card h4 {
+    color: #f5a623;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* TENTANG */
+.tentang {
+    background: #1c1c1c;
+}
+
+.tentang p {
+    max-width: 700px;
+    margin: auto;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* KONTAK */
+.kontak p {
+    margin: 15px;
+    color: #ccc;
+}
+
+/* FOOTER */
+footer {
+    background: #080808;
+    padding: 30px;
+    text-align: center;
+    color: #999;
+}
+
+footer h3 {
+    color: #f5a623;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+}
